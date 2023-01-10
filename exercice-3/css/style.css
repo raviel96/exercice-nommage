@@ -1,0 +1,162 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(66, 64, 64);
+    padding-top: 50px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.list {
+    background-color: rgb(137, 132, 132);
+}
+
+.list li:hover>a {
+    color: #ccc;
+}
+
+.list__item {
+    padding: 10px;
+}
+
+.list__item a {
+    padding: 5px;
+    color: white;
+}
+
+/* Main - Left section  */
+
+.left-section {
+    border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.left-section__link {
+    padding: 20px 0 20px 5px;
+}
+
+.left-section__link a {
+    color: rgb(137, 132, 132);
+}
+
+.left-section__article__title {
+    background-color: rgb(220, 220, 220);
+    color: rgb(137, 132, 132);
+    border-left: 25px solid;
+    padding: 10px 0 10px 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.left-section__article__content {
+    display: flex;
+    padding: 20px;
+}
+
+.left-section__article__content img {
+    margin-right: 20px;
+}
+
+.left-section__article__content__text p {
+    margin-bottom: 50px;
+}
+
+.left-section__article__content__text a {
+    font-weight: bold;
+    color: crimson;
+}
+
+.right-section {
+    padding: 10px;
+}
+
+.right-section__gallery {
+    width: 50%;
+}
+
+.right-section__gallery__product {
+    margin-top: 15px;
+    background-color: rgb(137, 132, 132);
+}
+
+.right-section__gallery__product img {
+    width: 100%;
+}
+
+.right-section__gallery__product img:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+.right-section__gallery__product h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.right-section__gallery__product p {
+    font-size: 1rem;
+    color: rgb(213, 212, 212);
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(66, 64, 64);
+    padding: 10px 0 10px 20px;
+    color: white;
+}
+
+@media screen and (min-width:768px) {
+
+    .list {
+        display: flex;
+    }
+
+    .right-section__gallery {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width:990px) {
+    
+    .container {
+        /* width: 990px; */
+    }
+
+    main {
+        display: flex;
+    }
+
+    .left-section {
+        width: 80%;
+        border-bottom: none;
+        border-right: 1px solid rgb(220, 220, 220);
+    }
+
+    .right-section {
+        border: 1px solid black;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .right-section__gallery {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .right-section__gallery__product {
+        margin: 0;
+    }
+
+}
